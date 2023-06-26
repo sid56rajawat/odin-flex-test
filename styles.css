@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.main>div{
+    border: 1px solid red;
+}
+body{
+    height: 100vh;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    margin-right: auto;
+}
+header{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.main{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+.main > div{
+    flex: 1 1 auto;
+}
+.awesome{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.awesome > .splash-image{
+    max-width: initial;
+    width: 45%;
+    height: 300px;
+    flex: 1 1 45%;
+}
+
