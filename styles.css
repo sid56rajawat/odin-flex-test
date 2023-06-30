@@ -1,11 +1,8 @@
 *{
     box-sizing: border-box;
 }
-.main>div{
-    border: 1px solid red;
-}
 body{
-    height: 100vh;
+    height: 100vw;
     padding: 0px 10%;
     display: flex;
     flex-direction: column;
@@ -26,7 +23,9 @@ header{
     flex-direction: column;
 }
 .main > div{
+    height: 30vw;
     flex: 1 1 auto;
+    border: 1px solid red;
 }
 .awesome{
     display: flex;
@@ -34,9 +33,57 @@ header{
     align-items: center;
 }
 .awesome > .splash-image{
-    max-width: initial;
-    width: 45%;
-    height: 300px;
-    flex: 1 1 45%;
+    margin: auto;
+    width: auto;
+    max-width: 45%;
+    height: 20vh;
+    flex: 1;
+}
+.random{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.random > h2{
+    text-align: center;
 }
 
+.random > .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1 1 auto;
+}
+.square{
+    flex: 1 1 auto;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+}
+.item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.item > p{
+    font-size: small;
+    text-align: center;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    justify-content: center;
+}
+.quote > .subtext{
+    text-align: end;
+    margin-top: 10px;
+}
+/* TODO : Basic layout of action page */
